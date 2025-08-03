@@ -151,3 +151,7 @@ vim.keymap.set("t", "<Esc>", function()
   end
 end, { noremap = true, silent = true, desc = "Close floating terminal from terminal mode" })
 
+-- load plugins
+require("config.lazy")
+
+vim.notify = require("notify")
