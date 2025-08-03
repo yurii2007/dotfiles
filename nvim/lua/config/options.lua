@@ -25,3 +25,6 @@ vim.opt.autowrite = false
 vim.opt.clipboard:append("unnamedplus")
 vim.opt.modifiable = true
 
+-- disabling netrw for nvim-tree
+vim.g.loaded_netrw       = 1
+vim.g.loaded_netrwPlugin = 1
