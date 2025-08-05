@@ -1,5 +1,5 @@
 return {
-  "doki-theme/doki-theme-vim",
+  'doki-theme/doki-theme-vim',
   lazy = false,
-  priority = 1000
+  priority = 1000,
 }
