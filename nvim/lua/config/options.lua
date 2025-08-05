@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- theme
-vim.cmd.colorscheme("yukinoshita_yukino")
+vim.cmd.colorscheme("satsuki_dark")
 
 vim.o.number = true
 vim.o.relativenumber = true
