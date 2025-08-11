@@ -2,7 +2,6 @@ return {
   'nvim-tree/nvim-tree.lua',
   lazy = false,
   opts = {
-    -- General settings
     auto_reload_on_write = true,
     disable_netrw = true,
     hijack_netrw = true,
@@ -11,20 +10,18 @@ return {
     sync_root_with_cwd = true,
     respect_buf_cwd = true,
 
-    -- Update focused file in tree
     update_focused_file = {
       enable = true,
       update_root = true,
       ignore_list = {},
     },
 
-    -- File ignore patterns
     filters = {
       dotfiles = false,
       git_clean = false,
       no_buffer = false,
-      custom = { '^.git$', 'node_modules', '.cache', 'target' },
-      exclude = { '.gitignore', '.env' }, -- Always show these
+      custom = { '^.git$', 'node_modules', '.cache' },
+      exclude = { '.gitignore', '.env' },
     },
 
     system_open = {
@@ -32,16 +29,19 @@ return {
       args = {},
     },
 
-    -- Diagnostics integration
     diagnostics = {
       enable = true,
       show_on_dirs = true,
       debounce_delay = 50,
       icons = {
-        hint = '',
-        info = '',
-        warning = '',
-        error = '',
+        hint = '󰌵',
+        info = '󰋽',
+        warning = '󰀪',
+        error = '󰅚',
+      },
+      severity = {
+        min = vim.diagnostic.severity.HINT,
+        max = vim.diagnostic.severity.ERROR,
       },
     },
 
@@ -69,7 +69,6 @@ return {
       },
     },
 
-    -- Renderer settings (appearance)
     renderer = {
       add_trailing = false,
       group_empty = false,
@@ -134,7 +133,6 @@ return {
       symlink_destination = true,
     },
 
-    -- Git settings
     git = {
       enable = true,
       ignore = false,
@@ -143,14 +141,12 @@ return {
       timeout = 400,
     },
 
-    -- Modified files
     modified = {
       enable = true,
       show_on_dirs = true,
       show_on_open_dirs = true,
     },
 
-    -- Actions configuration
     actions = {
       use_system_clipboard = true,
       change_dir = {
@@ -189,20 +185,15 @@ return {
       },
     },
 
-    -- Trash settings
     trash = {
-      cmd = 'gio trash', -- Linux
-      -- cmd = "trash", -- macOS (install via brew)
-      -- cmd = "Remove-ItemSafely", -- Windows PowerShell
+      cmd = 'gio trash',
     },
 
-    -- Live filter
     live_filter = {
       prefix = '[FILTER]: ',
       always_show_folders = true,
     },
 
-    -- Tab settings
     tab = {
       sync = {
         open = false,
@@ -211,12 +202,10 @@ return {
       },
     },
 
-    -- Notify settings
     notify = {
       threshold = vim.log.levels.INFO,
     },
 
-    -- Log settings
     log = {
       enable = false,
       truncate = false,
