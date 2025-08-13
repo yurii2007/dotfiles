@@ -15,6 +15,7 @@ return {
     require('lspconfig').lua_ls.setup {}
     require('lspconfig').rust_analyzer.setup {}
     require('lspconfig').ts_ls.setup {}
+    require('lspconfig').tailwindcss.setup {}
 
     vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to definition' })
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, { desc = 'Show references' })
