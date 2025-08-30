@@ -49,22 +49,23 @@ return {
     view = {
       adaptive_size = false,
       centralize_selection = false,
-      width = 35,
+      width = 60,
       side = 'left',
       preserve_window_proportions = false,
       number = false,
       relativenumber = false,
       signcolumn = 'yes',
       float = {
-        enable = false,
+        enable = true,
         quit_on_focus_loss = true,
         open_win_config = {
           relative = 'editor',
           border = 'rounded',
-          width = 50,
-          height = 30,
-          row = 1,
-          col = 1,
+          width = 60,
+          height = 35,
+          row = 3,
+          col = math.floor((vim.o.columns - 60) / 2),
+          style = 'minimal',
         },
       },
     },
@@ -190,7 +191,7 @@ return {
     },
 
     live_filter = {
-      prefix = '[FILTER]: ',
+      prefix = '[filter]: ',
       always_show_folders = true,
     },
 

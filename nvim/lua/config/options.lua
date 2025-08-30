@@ -3,6 +3,21 @@ vim.g.maplocalleader = ' '
 
 -- theme
 vim.cmd.colorscheme 'yukinoshita_yukino'
+vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = '#2b2d3a', fg = '#e6e6e6' })
+vim.api.nvim_set_hl(0, 'NvimTreeNormalFloat', { bg = '#2b2d3a', fg = '#e6e6e6' })
+vim.api.nvim_set_hl(0, 'NvimTreeFloatBorder', { bg = '#2b2d3a', fg = '#8be9fd' })
+vim.api.nvim_set_hl(0, 'NvimTreeFloatTitle', { bg = '#2b2d3a', fg = '#bd93f9', bold = true })
+vim.api.nvim_set_hl(0, 'NvimTreeFolderIcon', { fg = '#8be9fd' })
+vim.api.nvim_set_hl(0, 'NvimTreeOpenedFolderIcon', { fg = '#50fa7b' })
+vim.api.nvim_set_hl(0, 'TreesitterContext', {
+  bg = '#2b2d3a',
+  fg = '#e6e6e6',
+})
+
+vim.api.nvim_set_hl(0, 'TreesitterContextBottom', {
+  fg = '#e6e6e6',
+})
+vim.cmd 'highlight clear TreesitterContextBottom'
 
 vim.o.number = true
 vim.o.relativenumber = true
