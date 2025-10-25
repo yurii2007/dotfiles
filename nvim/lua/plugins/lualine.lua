@@ -9,9 +9,9 @@ return {
     sections = {
       lualine_a = { 'mode' },
       lualine_b = { 'diagnostics' },
-      lualine_c = { 'filename', 'lsp_status' },
+      lualine_c = { { 'filename', path = 1 }, 'lsp_status' },
       lualine_x = { 'encoding', 'filetype' },
-      lualine_y = { 'progress' },
+      lualine_y = {},
       lualine_z = { 'location' },
     },
   },

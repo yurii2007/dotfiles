@@ -49,6 +49,7 @@ vim.keymap.set('n', '<leader>ef', ':NvimTreeFindFileToggle<CR>', { desc = 'Toggl
 vim.keymap.set('n', '<leader>ec', ':NvimTreeCollapse<CR>', { desc = 'Collapse file explorer' })
 vim.keymap.set('n', '<leader>er', ':NvimTreeRefresh<CR>', { desc = 'Refresh file explorer' })
 
-vim.keymap.set('n', '<leader>fm', vim.diagnostic.open_float, { desc = 'Show full diagnostic message' })
+--diagnostics
+vim.keymap.set('n', '<leader>fm', vim.diagnostic.open_float, { desc = 'Show Full Diagnostic Message in float window' })
 vim.keymap.set('n', '<leader>nm', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
 vim.keymap.set('n', '<leader>pm', vim.diagnostic.goto_prev, { desc = 'Go to prev diagnostic message' })

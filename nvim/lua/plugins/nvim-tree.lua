@@ -49,7 +49,7 @@ return {
     view = {
       adaptive_size = false,
       centralize_selection = false,
-      width = 60,
+      width = 70,
       side = 'left',
       preserve_window_proportions = false,
       number = false,
@@ -61,8 +61,8 @@ return {
         open_win_config = {
           relative = 'editor',
           border = 'rounded',
-          width = 60,
-          height = 35,
+          width = 70,
+          height = 45,
           row = 3,
           col = math.floor((vim.o.columns - 60) / 2),
           style = 'minimal',
