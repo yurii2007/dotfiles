@@ -20,6 +20,7 @@ return {
       typescript = { 'prettierd', 'prettier', stop_after_first = true },
       javascriptreact = { 'prettierd', 'prettier', stop_after_first = true },
       typescriptreact = { 'prettierd', 'prettier', stop_after_first = true },
+      python = { 'isort', 'black' },
     },
     default_format_opts = {
       lsp_format = 'fallback',

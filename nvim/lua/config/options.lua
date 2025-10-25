@@ -39,7 +39,8 @@ vim.opt.autoread = true
 vim.opt.autowrite = false
 
 -- behavior
-vim.opt.clipboard:append 'unnamedplus'
+vim.api.nvim_set_option('clipboard', 'unnamedplus')
+-- vim.opt.clipboard:append 'unnamedplus'
 vim.opt.modifiable = true
 
 -- disabling netrw for nvim-tree

@@ -17,6 +17,7 @@ return {
     require('lspconfig').ts_ls.setup {}
     require('lspconfig').tailwindcss.setup {}
     require('lspconfig').taplo.setup {}
+    require('lspconfig').pyright.setup {}
 
     vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to definition' })
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, { desc = 'Show references' })
