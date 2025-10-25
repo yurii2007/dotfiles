@@ -2,7 +2,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- theme
-vim.cmd.colorscheme 'yukinoshita_yukino'
+-- vim.cmd.colorscheme 'yukinoshita_yukino'
 vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = '#2b2d3a', fg = '#e6e6e6' })
 vim.api.nvim_set_hl(0, 'NvimTreeNormalFloat', { bg = '#2b2d3a', fg = '#e6e6e6' })
 vim.api.nvim_set_hl(0, 'NvimTreeFloatBorder', { bg = '#2b2d3a', fg = '#8be9fd' })
@@ -21,7 +21,7 @@ vim.cmd 'highlight clear TreesitterContextBottom'
 
 vim.o.number = true
 vim.o.relativenumber = true
-vim.opt.scrolloff = 15
+vim.opt.scrolloff = 20
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
@@ -39,8 +39,7 @@ vim.opt.autoread = true
 vim.opt.autowrite = false
 
 -- behavior
-vim.api.nvim_set_option('clipboard', 'unnamedplus')
--- vim.opt.clipboard:append 'unnamedplus'
+vim.opt.clipboard:append 'unnamedplus'
 vim.opt.modifiable = true
 
 -- disabling netrw for nvim-tree
@@ -60,8 +59,8 @@ vim.diagnostic.config {
     enabled = true,
     format = function(diagnostic)
       local message = diagnostic.message
-      if #message > 80 then
-        message = message:sub(1, 77) .. '...'
+      if #message > 120 then
+        message = message:sub(1, 120) .. '...'
       end
 
       local source = diagnostic.source

@@ -27,3 +27,10 @@ vim.api.nvim_create_autocmd({ 'BufReadPost', 'BufWritePost', 'InsertLeave' }, {
     require('lint').try_lint()
   end,
 })
+
+vim.g.skip_ts_context_commentstring_module = true
+
+local get_option = vim.filetype.get_option
+vim.filetype.get_option = function(filetype, option)
+  return option == 'commentstring' and require('ts_context_commentstring.internal').calculate_commentstring() or get_option(filetype, option)
+end

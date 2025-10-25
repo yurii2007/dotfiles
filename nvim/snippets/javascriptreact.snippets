@@ -1,0 +1,34 @@
+extends javascript
+
+snippet ir import React
+  import React from 'react';
+
+snippet uses useState
+  const [${1:valueName}, set${2:valueName}] = useState($3);
+
+snippet imc import Material UI component
+  import ${1:ComponentName} from '@mui/material/${1:ComponentName}';
+
+snippet rafce function component default export
+ import React from 'react';
+
+ const ${1:ComponentName} = () => {
+ return <></>;
+ }
+
+ export default ${1:ComponentName}
+
+snippet usef useEffect
+ useEffect(() => {
+ $0
+ }, [$1]);
+
+snippet usec useCallback
+ const $1 = useCallback(($2) => {
+ $0
+ }, [$3]);
+
+snippet usem useMemo
+ const $1 = useMemo(() => {
+ $0
+ }, [$2]);
