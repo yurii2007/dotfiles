@@ -10,4 +10,4 @@ require 'config.autocmds'
 vim.notify = require 'notify'
 vim.cmd.colorscheme 'kanagawa'
 
-require('luasnip.loaders.from_snipmate').load { paths = './snippets' }
+require('luasnip.loaders.from_snipmate').load { paths = { './snippets' } }
