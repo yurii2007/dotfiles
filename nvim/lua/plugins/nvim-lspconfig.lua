@@ -12,13 +12,21 @@ return {
     },
   },
   config = function()
-    require('lspconfig').lua_ls.setup {}
-    require('lspconfig').rust_analyzer.setup {}
-    require('lspconfig').ts_ls.setup {}
-    require('lspconfig').tailwindcss.setup {}
-    require('lspconfig').taplo.setup {}
-    require('lspconfig').cssls.setup {}
-    require('lspconfig').pyright.setup {}
+    local lsp_list = {
+      { name = 'lua_ls', enabled = true },
+      { name = 'rust_analyzer', enabled = true },
+      { name = 'ts_ls', enabled = true },
+      { name = 'tailwindcss', enabled = false },
+      { name = 'taplo', enabled = true },
+      { name = 'cssls', enabled = true },
+      { name = 'pyright', enabled = true },
+    }
+
+    for _, lsp in ipairs(lsp_list) do
+      if lsp.enabled then
+        vim.lsp.enable(lsp.name)
+      end
+    end
 
     vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to definition' })
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, { desc = 'Show references' })
