@@ -1,5 +1,12 @@
+---@brief
+--- https://github.com/tailwindlabs/tailwindcss-intellisense
+---
+--- Tailwind CSS Language Server can be installed via npm:
+---
+--- npm install -g @tailwindcss/language-server
 local util = require 'lspconfig.util'
 
+---@type vim.lsp.Config
 return {
   cmd = { 'tailwindcss-language-server', '--stdio' },
   -- filetypes copied and adjusted from tailwindcss-intellisense
@@ -58,6 +65,13 @@ return {
     'vue',
     'svelte',
     'templ',
+  },
+  capabilities = {
+    workspace = {
+      didChangeWatchedFiles = {
+        dynamicRegistration = true,
+      },
+    },
   },
   settings = {
     tailwindCSS = {
