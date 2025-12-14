@@ -19,7 +19,7 @@ vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = 'Telescope live gr
 vim.keymap.set('n', '<leader>sb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = 'Telescope help tags' })
 vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = 'Telescope resume search' })
-vim.keymap.set('n', '<leader>sfo', builtin.oldfiles, { desc = 'Telescope view recently opened files' })
+vim.keymap.set('n', '<leader>sof', builtin.oldfiles, { desc = 'Telescope view recently opened files' })
 
 -- neogit
 vim.keymap.set('n', '<leader>ng', ':Neogit<CR>', { desc = 'Open negoit view' })

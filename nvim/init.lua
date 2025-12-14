@@ -8,6 +8,6 @@ require 'config.floating-terminal'
 require 'config.autocmds'
 
 vim.notify = require 'notify'
-vim.cmd.colorscheme 'kanagawa'
+vim.cmd.colorscheme 'everforest'
 
 require('luasnip.loaders.from_snipmate').load { paths = { './snippets' } }
