@@ -16,7 +16,7 @@ return {
       { name = 'lua_ls', enabled = true },
       { name = 'rust_analyzer', enabled = true },
       { name = 'ts_ls', enabled = true },
-      { name = 'tailwindcss', enabled = false },
+      { name = 'tailwindcss', enabled = true },
       { name = 'taplo', enabled = true },
       { name = 'cssls', enabled = true },
       { name = 'pyright', enabled = true },
