@@ -21,6 +21,7 @@ return {
       { name = 'cssls', enabled = true },
       { name = 'pyright', enabled = true },
       { name = 'jsonls', enabled = true },
+      { name = 'sqls', enabled = true },
     }
 
     for _, lsp in ipairs(lsp_list) do
