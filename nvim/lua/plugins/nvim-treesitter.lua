@@ -9,10 +9,15 @@ return {
       enable = true,
     },
     ensure_installed = {
+      'javascript',
+      'typescript',
       'jsx',
       'javascriptreact',
       'tsx',
       'typescriptreact',
+      'html',
+      'css',
+      'svelte',
     },
   },
 }

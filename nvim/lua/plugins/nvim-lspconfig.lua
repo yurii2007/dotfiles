@@ -22,12 +22,11 @@ return {
       { name = 'pyright', enabled = true },
       { name = 'jsonls', enabled = true },
       { name = 'sqls', enabled = true },
+      { name = 'svelte', enabled = true },
     }
 
     for _, lsp in ipairs(lsp_list) do
-      if lsp.enabled then
-        vim.lsp.enable(lsp.name)
-      end
+      vim.lsp.enable(lsp.name, lsp.enabled)
     end
 
     vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to definition' })
