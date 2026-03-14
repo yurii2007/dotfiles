@@ -1,0 +1,3 @@
+return {
+  'burner/vim-svelte',
+}
