@@ -1,9 +1,9 @@
-[submodule "tmux/plugins/tmux-sensible"]
-	path = tmux/plugins/tmux-sensible
+[submodule "tmux/.config/tmux/plugins/tmux-sensible"]
+	path = tmux/.config/tmux/plugins/tmux-sensible
 	url = https://github.com/tmux-plugins/tmux-sensible
-[submodule "tmux/plugins/tpm"]
-	path = tmux/plugins/tpm
+[submodule "tmux/.config/tmux/plugins/tpm"]
+	path = tmux/.config/tmux/plugins/tokyo-night-tmux
 	url = https://github.com/tmux-plugins/tpm
-[submodule "tmux/plugins/tokyo-night-tmux"]
-	path = tmux/plugins/tokyo-night-tmux
+[submodule "tmux/.config/tmux/plugins/tokyo-night-tmux"]
+	path = tmux/.config/tmux/plugins/tokyo-night-tmux
 	url = https://github.com/janoamaral/tokyo-night-tmux
